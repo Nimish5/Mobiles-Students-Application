@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "db8aa6fa-791f-4564-a79f-94ad971f7fdb",
+		"name": "Sandbox/flask_queue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Push",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":\"abcd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/push",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"push"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":\"abcd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/pop",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":\"abcd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Queue",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":\"abcd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
